@@ -40,18 +40,17 @@
         <div class="row">
             <div class="col-lg-3 pull-right col-xs-12">
                 <div class="form">
-                    <form action="#">
+                    <!-- <form action="/pages/cari_aksi" method="POST" name="keyword" autocomplete="off">
                         <div class="form-group">
                             <label class="control-label">Blog Search</label>
-
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search for...">
+                                <input type="text" class="form-control" placeholder="Search for blog..." name="keyword">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">Go!</button>
+                                    <button class="btn btn-default" type="submit" name="submit">Go!</button>
                                 </span>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
 
                 <br>

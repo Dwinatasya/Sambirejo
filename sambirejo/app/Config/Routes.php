@@ -39,6 +39,11 @@ $routes->get('/', 'Pages::index');
 $routes->get('/about', 'Pages::about');
 $routes->get('/blog', 'Pages::blog');
 $routes->get('/contact', 'Pages::contact');
+$routes->get('/login', 'Login::index');
+$routes->post('/login/login_aksi', 'Login::login_aksi');
+$routes->get('/admin', 'Pages::admin');
+$routes->get('/welcome_message', 'Home::index');
+$routes->post('/pages/tambah_aksi', 'Pages::tambah_aksi');
 
 /*
  * --------------------------------------------------------------------

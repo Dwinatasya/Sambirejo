@@ -20,7 +20,7 @@
 
                     <div class="copyright-text">
                         <p>Copyright &copy; 2022 KKN-Tematik UPNVJT</p>
-                        <p>by: <a href="https://www.phpjabbers.com/">KKN Kelompok 8</a></p>
+                        <p>by: <a href="<?= base_url('/login') ?>">KKN Kelompok 8 Admin</a></p>
                     </div>
                 </div>
             </div>

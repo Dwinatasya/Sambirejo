@@ -19,12 +19,15 @@
                         <div class="card-body">
                             <h5 class="card-title text-dark">Blog Sambirejo</h5>
                             <div class="row">
+
                                 <?php foreach ($blogadmin as $row) {
                                     echo '
                                         <div class="col-sm-6">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <p class="card-text" ><a class="text-success"  href="' . $row['link'] . '">' . $row['nama'] . '</a> </p>
+                                                <form action="' . base_url('pages/hapus/' . $row['id']) . '">
+                                                    <p class="card-text"><a class="text-success" href="' . $row['link'] . '">' . $row['nama'] . '</a> </p>
+                                                </form> 
                                                 </div>
                                             </div>
                                         </div>
@@ -41,13 +44,13 @@
                             <h5 class="card-title text-dark">Tambah Blog</h5>
                             <form class="form-signin" action="<?php echo base_url('pages/tambah_aksi'); ?>" method="post">
                                 <div class="mb-3">
-                                    <input type="text" name="nama" class="form-control" id="exampleFormControlInput1" placeholder="Judul Blog">
+                                    <input type="text" name="nama" class="form-control" id="nama" placeholder="Judul Blog">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="file" name="foto" class="form-control" id="exampleFormControlInput1" placeholder="Foto Blog">
+                                    <input type="file" name="foto" class="form-control" id="foto" placeholder="Foto Blog">
                                 </div>
                                 <div class="mb-3">
-                                    <textarea name="link" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Link Blog"></textarea>
+                                    <textarea name="link" class="form-control" id="link" rows="3" placeholder="Link Blog"></textarea>
                                 </div>
                                 <button class="btn btn-success" type="submit" name="submit">Tambah</button>
                             </form>

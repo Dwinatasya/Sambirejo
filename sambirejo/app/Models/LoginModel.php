@@ -24,19 +24,19 @@ class LoginModel extends Model
         $pass = $this->request->getPost('pass');
 
         //pembuatan query
-        $sql = "SELECT * FROM admin_login WHERE username='$username' AND username='$username'";
+        $sql = "SELECT * FROM admin_login WHERE username='$username' AND pass='$pass'";
         // $sql = "SELECT * FROM admin_login WHERE username=' $username' AND pass='$pass' ";
 
         //eksekusi
         $query = $this->db->query($sql);
         // echo $query->getNumRows();
         // die;
-        if($query->getNumRows() > 0){
+        if ($query->getNumRows() > 0) {
             $hasil = array(
                 'username' => $username,
                 'pass' => $pass
             );
-        }else{
+        } else {
             $hasil = "Login Gagal, Ulangi Lagi";
         }
         return $hasil;

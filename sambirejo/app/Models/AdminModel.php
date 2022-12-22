@@ -37,7 +37,7 @@ class AdminModel extends Model
         //menangkap gambar
         // $foto = $this->request->getFile('foto');
         // $name = $foto->getName();
-        // //memindahkan foto ke direcktory
+        // // //memindahkan foto ke direcktory
         // $foto->move('public/images', $name);
 
         //buat query
